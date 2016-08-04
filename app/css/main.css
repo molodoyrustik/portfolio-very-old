@@ -1,0 +1,305 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url(../img/index/main-background.jpg);
+    background-repeat: repeat;
+    font: normal 1em 'fira_sanslight';
+    color: #4a545d;
+}
+
+/* Общие классы */
+.container{
+    width: 960px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+/* clearfix - end*/
+/* Общие классы - конец */
+
+/* прибьем футер к низу - НАЧАЛО */
+.wrapper{
+    position: relative;
+    min-height: 100%;
+    min-width: 970px;
+    height: auto!important;
+    overflow: hidden;
+}
+.wrapper:after{
+    content: '';
+    height: 80px;
+    display: block;
+}
+.page-footer{
+    height: 80px;
+    margin-top: -80px;
+}
+/* прибьем футер к низу - КОНЕЦ*/
+
+/* Шапка */
+.container-header{
+    max-width: 1200px;
+    min-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.page-header{
+    min-height: 120px;
+    background-color: #eff3f7;
+    background-image: url('../img/index/line-header.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    margin-bottom: 40px;
+}
+.header-logo-link{
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.header-logo-link__text{
+    position: absolute;
+    left: -99999px;
+}
+.socials{
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+/* Шапка - конец */
+
+/* Блок социальных ссылок */
+.socials{
+    margin: 0;
+    padding: 0;
+    min-width: 260px;
+    font-size: 0;
+}
+.socials__item{
+    display: inline-block;
+    height: 47px;
+    width: 47px;
+    margin-left: 10px;
+}
+.socials__item:first-child {
+    margin-left: 0;
+}
+.socials__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+}
+.socials__link--vk {
+     background-image: url('../img/index/vk.png');
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+.socials__link--tw {
+    background-image: url('../img/index/tw.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.socials__link--fb {
+    background-image: url('../img/index/facebook.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.socials__link--gh {
+    background-image: url('../img/index/github.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socials__link--vk:hover {
+    background-image: url('../img/index/vk-hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.socials__link--tw:hover {
+    background-image: url('../img/index/twitter-hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.socials__link--fb:hover {
+    background-image: url('../img/index/fb-hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.socials__link--gh:hover {
+    background-image: url('../img/index/github-hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Блок социальных ссылок - конец */
+
+/* Сайдбар  */
+.sidebar{
+    width: 250px;
+    float: left;
+}
+/* Навигация */
+.navigation{
+    margin-bottom: 25px;
+    overflow: hidden;
+    background-color: #eff3f7;
+    border-radius: 4px;
+}
+.navigation-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation-list__item{
+    margin: 0 10px;
+    border-top: 2px solid #3ba8c0;
+}
+.navigation-list__item:first-child{
+    border-top: none;
+}
+/* Навигация - текуший пункт меню */
+.navigation-list__item--current {
+    margin: 0;
+    margin-bottom: -3px;
+    padding-left: 10px;
+    border-bottom: none;
+    background-color: #3ba8c0;
+}
+.navigation-list__item--current .navigation-list__link{
+    color: #f9fafb;
+    font-size: 23px;
+}
+.navigation-list__item--current .navigation-list__link:hover{
+    color: #f9fafb;
+}
+/* Навигация - текуший пункт меню - конец */
+.navigation-list__link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 23px;
+    color: #959aa8;
+    text-decoration: none;
+}
+.navigation-list__link:hover{
+    color: #3ba8c0;
+}
+/* Навигация - конец */
+
+/* Контакты */
+.contact{
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #3ba8c0;
+}
+.contact__title{
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 21px;
+    color: #fbfcfd;
+    background-color: #3ba8c0;
+
+}
+.contact-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.contact-list__item{
+
+}
+.contact-list__link{
+    display: block;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    margin: 0;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-list__link--mail{
+    background-color: #41b9d4;
+    background-image: url('../img/index/sms.png');
+    background-repeat: no-repeat;
+    background-position: 40px center;
+}
+.contact-list__link--phone{
+    background-color: #48cbe8;
+    background-image: url('../img/index/phone.png');
+    background-repeat: no-repeat;
+    background-position: 40px center;
+}
+.contact-list__link--skype{
+    background-color: #51daf8;
+    background-image: url('../img/index/skype.png');
+    background-repeat: no-repeat;
+    background-position: 40px center;
+}
+/* Контакты - конец */
+
+.variable-content{
+    width: 650px;
+    float: right;
+    margin-bottom: 40px;
+}
+
+.page-footer{
+    position: relative;
+    background-image: url('../img/index/footer-line.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #eff3f7;
+}
+.lock{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.lock p {
+    display: none;
+}
+.copyright{
+    margin: 0 180px;
+    padding-top: 35px;
+    text-align: center;
+    font-size: 13px;
+}
