@@ -1,0 +1,122 @@
+.my-work-main-block{
+	min-height: 840px;
+	background-color: #eff3f7;
+	font-size: 0;
+}
+.my-work-main-block__title{
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	font-size: 27px;
+	color: #3ba8c0;
+	background-image: url('../img/index/short-line.jpg');
+	background-repeat: no-repeat;
+	background-position: 0px bottom;
+}
+.my-work{
+	display: inline-block;
+	vertical-align: top;
+	width: 185px;
+	height: 200px;
+	margin-left: 30px;
+	margin-bottom: 45px;
+	
+}
+.my-work:nth-child(3n + 2){
+	margin-left: 20px;
+}
+
+.my-work-wrapper-img{
+	position: relative;
+	width: 181px;
+	height: 121px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	border-radius: 7px;
+	overflow: hidden;
+	border: 2px solid #3ba8c0;
+	cursor: pointer;
+}
+.my-work__img{
+	width: 100%;
+	height: 100%;
+}
+
+.my-work__hover{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(64, 145, 186, 0.75);
+}
+.my-work__hover-text{
+	position: absolute;
+	top: 55px;
+	left: 55px;
+	margin: 0;
+	padding: 3px;
+	font-size: 12px;
+	color: #ffffff;
+	text-align: center;
+	border: 2px solid #ffffff;
+	border-radius: 7px;
+
+}
+.my-work__link{
+	display: block;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-size: 13px;
+	font-family: 'fira_sanslight_italic';
+	color: #3ba8c0;
+	text-align: center;
+	text-decoration: none;
+}
+.my-work__description{
+	width: 180px;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: 'fira_sanslight';
+	line-height: 21px;
+	color: #4a545d;
+	text-align: center;
+}
+
+.add-project{
+	display: inline-block;
+	vertical-align: top;
+	width: 180px;
+	height: 130px;
+	margin-left: 30px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #edf8fc;
+	border-radius: 7px;
+	background-image: url('../img/my-work/add-project-img.png');
+	background-repeat: no-repeat;
+	background-position: center 35px;
+}
+.add-project a {
+	position: absolute;
+	display: block;
+	width: 181px;
+	height: 121px;
+	text-decoration: none;
+}
+.add-project__text{
+	margin: 0;
+	margin-top: 80px;
+	padding: 0;
+	font-size: 13px;
+	color: #3ba8c0;
+	text-align: center;
+}
+
