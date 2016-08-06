@@ -1,0 +1,144 @@
+.main-contact-block{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border-radius: 4px;
+}
+.main-contact-block__title{
+	margin: 0;
+	padding: 30px;
+	font-size: 27px;
+	font-family: 'fira_sansbook';
+	color: #ffffff;
+	font-weight: 500;
+	text-align: center;
+	background-color: #48cbe8;
+	border-bottom: 15px solid #67dffa;
+}
+.contact-form{
+	padding-top: 40px;
+	padding-right: 123px;
+	padding-left: 124px;
+	padding-bottom: 200px;
+	font-size: 0;
+	background-color: #eff3f7;
+}
+
+.contact-from__wrapper-for-text-input{
+	display: inline-block;
+	margin-left: 18px;
+	font-size: 1em;
+}
+.contact-from__wrapper-for-text-input:nth-child(2n + 1){
+	margin-left: 0px;
+}
+
+.contact-form__label{
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 19px;
+	font-family: 'fira_sanslight';
+	color: #959aa8;
+}
+.contact-form__input{
+	display: block;
+	width: 179px;
+	margin: 0;
+	padding: 0;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 10px;
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+	color: #48cbe8;
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+    outline: none;
+}
+.contact-form__input--description{
+	width: 390px;
+	height: 171px;
+	resize: none;
+	padding-bottom: 0;
+}
+.contact-from__wrapper-for-text-input--captcha{
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+.contact-form__wrapper-captcha-img{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 188px;
+	margin: 0;
+	padding: 0;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	background-color: #ffffff;
+	border: 1px solid #48cbe8;
+    border-radius: 3px;
+}
+.contact-form__captcha-img{
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+.contact-input-code{
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0;
+	margin-left: 18px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.contact-form__btn-submit{
+	float: left;
+    display: block;
+    margin: 0px auto;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    color: #ffffff;
+    font-size: 19px;
+    font-family: 'fira_sansbook';
+    background-color: #48cbe8;
+    border: none;
+    border-bottom: 4px solid #3ba8c0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.contact-form__btn-submit:hover{
+	border: none;
+}
+.contact-form__btn-submit:active{
+	border-top: 4px solid #3ba8c0;
+}
+.contact-form__btn-reset{
+	float: right;
+	display: block;
+    margin: 0px auto;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    color: #ffffff;
+    font-size: 19px;
+    font-family: 'fira_sansbook';
+    background-color: #849db5;
+    border: none;
+    border-bottom: 4px solid #687b8f;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.contact-form__btn-reset:hover{
+	border: none;
+}
+.contact-form__btn-reset:active{
+	border-top: 4px solid #687b8f;
+}
+
