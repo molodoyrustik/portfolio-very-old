@@ -123,8 +123,12 @@
 
 						<div class="my-work">
 							
-							<div class="my-work-wrapper-img">
+							<div class="my-work__wrapper-img">
 								<img src="img/my-work/my-work-first.jpg" alt="" class="my-work__img">
+
+								<div class="my-work__hover">
+									<p class="my-work__hover-text">sedona.ru</p>
+								</div>
 							</div>
 
 							<a href="" class="my-work__link">www.sedona.ru</a>
@@ -134,10 +138,11 @@
 
 						<div class="my-work">
 
-							<div class="my-work-wrapper-img">
+							<div class="my-work__wrapper-img">
 								<img src="img/my-work/my-work-second.jpg" alt="" class="my-work__img">
+
 								<div class="my-work__hover">
-									<p class="my-work__hover-text">название</p>
+									<p class="my-work__hover-text">sedona.ru</p>
 								</div>
 							</div>
 							<a href="" class="my-work__link">www.pink.ru</a>
@@ -149,8 +154,12 @@
 
 						<div class="my-work">
 
-							<div class="my-work-wrapper-img">
+							<div class="my-work__wrapper-img">
 								<img src="img/my-work/my-work-first.jpg" alt="" class="my-work__img">
+
+								<div class="my-work__hover">
+									<p class="my-work__hover-text">sedona.ru</p>
+								</div>
 							</div>
 							<a href="" class="my-work__link">www.sedona.ru</a>
 							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
@@ -159,19 +168,21 @@
 
 						<div class="my-work">
 
-							<div class="my-work-wrapper-img">
+							<div class="my-work__wrapper-img">
 								<img src="img/my-work/my-work-second.jpg" alt="" class="my-work__img">
+								
+								<div class="my-work__hover">
+									<p class="my-work__hover-text">sedona.ru</p>
+								</div>
 							</div>
 							<a href="" class="my-work__link">www.pink.ru</a>
 							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
 
 						</div>
 
-						<div class="add-project">
-						<a href="">
-							<p class="add-project__text">Добавить проект</p>
-							</a>
-						</div>
+						<a href="" class="add-project">
+								<p class="add-project__text">Добавить проект</p>
+						</a>
 
 
 					</section>
@@ -188,7 +199,7 @@
 
 		<form action="" class="modal-add-project__form">
 
-		<div class="wrapper-form-titel clearfix">
+		<div class="modal-add-project__wrapper-titel clearfix">
 			<h2 class="modal-add-project__form-titel">Добавление проекта</h2>
 			<i class="modal-add-project__form-close">Закрыть</i>
 		</div>
@@ -197,8 +208,11 @@
 			<input type="text" class="modal-add-project__input" placeholder='Введите название'>
 
 			<p class="modal-add-project__input-title">Картинка проекта</p>
-			<input type="text" class="modal-add-project__input modal-add-project__input--upload" placeholder="Загрузите изображение">
-			<div class="modal-add-project__upload"></div>
+			<p type="text" class="modal-add-project__input modal-add-project__input--upload">Загрузите изображение</p>
+			<label for="upload">
+				<div class="modal-add-project__upload-icon"></div>
+				<input type="file" id='upload'>
+			</label>
 
 			<p class="modal-add-project__input-title">URL проекта</p>
 			<input type="text" class="modal-add-project__input" placeholder="Добавить ссылку">
@@ -233,6 +247,10 @@
 	<!-- JS -->
 	<!-- bower:js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/ev-emitter/ev-emitter.js"></script>
+	<script src="bower/imagesloaded/imagesloaded.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/qtip2/basic/jquery.qtip.js"></script>
 	<!-- endbower -->
 	<script src="js/main.js"></script>
 

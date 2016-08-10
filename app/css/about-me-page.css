@@ -12,17 +12,19 @@
 	padding-bottom: 15px;
 	padding-left: 20px;
 	font-size: 27px;
+	font-family: 'fira_sansbook';
+	font-weight: 400;
 	color: #3ba8c0;
 	background-image: url('../img/index/main-info-block-line.jpg');
 	background-repeat: no-repeat;
 	background-position: 0px bottom;
 }
-.wrapper-avatar-pos{
+.main-info-block__avatar-wrapper-pos{
 	float: left;
 	margin-left: 55px;
     margin-top: 20px;
 }
-.wrapper-avatar{
+.main-info-block__avatar-wrapper-style{
 	width: 142px;
 	height: 142px;
 	border-radius: 50% 50%;
@@ -52,6 +54,7 @@
 .list-info__key{
     padding: 0;
 	font-size: 17px;
+	font-family: 'fira_sansbook';
 	font-weight: 600;
 	color: #4a545d;
 }
@@ -59,7 +62,8 @@
     padding: 0;
     padding-left: 15px;
 	font-size: 15px;
-    font-weight: 600;
+    font-family: 'fira_sansbook';
+	font-weight: 500;
 	color: #4a545d;
 }
 .list-info__value--skill{
@@ -96,6 +100,8 @@
 	padding-bottom: 15px;
 	padding-left: 20px;
 	font-size: 27px;
+	font-family: 'fira_sansbook';
+	font-weight: 400;
 	color: #3ba8c0;
 	background-image: url('../img/index/short-line.jpg');
 	background-repeat: no-repeat;
@@ -117,9 +123,15 @@
 }
 .list-work__who{
 	font-size: 17px;
+	font-family: 'fira_sansbook';
+	font-weight: 400;
+	line-height: 1.2;
 }
 .list-work__when{
 	font-size: 15px;
+	font-family: 'fira_sanslight';
+	font-weight: 400;
+  	line-height: 1.2;
 }
 
 .education-block{
@@ -135,6 +147,8 @@
 	padding-bottom: 15px;
 	padding-left: 20px;
 	font-size: 27px;
+	font-family: 'fira_sansbook';
+	font-weight: 400;
 	color: #3ba8c0;
 	background-image: url('../img/index/short-line.jpg');
 	background-repeat: no-repeat;
@@ -160,4 +174,14 @@
 	background-image: url('../img/index/course.png');
 	background-repeat: no-repeat;
 	background-position: 65px center;
+}
+.list-education__where{
+	font-size: 17px;
+	font-family: 'fira_sansbook';
+	font-weight: 400;
+}
+.list-education__when{
+	font-size: 15px;
+	font-family: 'fira_sanslight';
+	font-weight: 400;
 }

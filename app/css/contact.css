@@ -27,6 +27,7 @@
 .contact-from__wrapper-for-text-input{
 	display: inline-block;
 	margin-left: 18px;
+	margin-bottom: 5px;
 	font-size: 1em;
 }
 .contact-from__wrapper-for-text-input:nth-child(2n + 1){
@@ -52,9 +53,13 @@
 	font-size: 13px;
 	font-family: 'fira_sanslight';
 	color: #48cbe8;
+	background-color: #fbfcfd;
     border: 1px solid #48cbe8;
     border-radius: 3px;
     outline: none;
+}
+.contact-form__input:focus {
+	background-color: #ffffff;
 }
 .contact-form__input--description{
 	width: 390px;

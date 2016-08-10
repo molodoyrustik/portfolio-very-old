@@ -2,6 +2,7 @@ html{
     height: 100%;
 }
 body{
+    min-width: 970px;
     height: 100%;
     background-image: url(../img/index/main-background.jpg);
     background-repeat: repeat;
@@ -15,12 +16,6 @@ body{
     padding-left: 5px;
     padding-right: 5px;
     margin: 0 auto;
-}
-.pull-left{
-    float: left;
-}
-.pull-right{
-    float: right;
 }
 
 /* clearfix */
@@ -195,8 +190,8 @@ body{
     background-color: #3ba8c0;
 }
 .navigation-list__item--current .navigation-list__link{
-    color: #f9fafb;
     font-size: 23px;
+    color: #f9fafb;
 }
 .navigation-list__item--current .navigation-list__link:hover{
     color: #f9fafb;
@@ -208,7 +203,10 @@ body{
     margin: 0;
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 20px;
     font-size: 23px;
+    font-weight: 400;
+    font-family: 'fira_sansbook';
     color: #959aa8;
     text-decoration: none;
 }
@@ -230,6 +228,8 @@ body{
     padding-bottom: 10px;
     margin: 0;
     font-size: 21px;
+    font-family: 'fira_sansbook';
+    font-weight: 400;
     color: #fbfcfd;
     background-color: #3ba8c0;
 
@@ -250,6 +250,7 @@ body{
     padding-left: 80px;
     margin: 0;
     font-size: 15px;
+    font-family: 'fira_sansbook';
     color: #ffffff;
     text-decoration: none;
 }
@@ -281,6 +282,7 @@ body{
 }
 
 .page-footer{
+    font-family: 'fira_sanslight';
     position: relative;
     background-image: url('../img/index/footer-line.png');
     background-repeat: no-repeat;
@@ -302,4 +304,6 @@ body{
     padding-top: 35px;
     text-align: center;
     font-size: 13px;
+    font-weight: 600;
+    font-family: 'fira_sanslight';
 }

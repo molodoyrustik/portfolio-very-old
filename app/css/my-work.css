@@ -11,6 +11,8 @@
 	padding-bottom: 15px;
 	padding-left: 20px;
 	font-size: 27px;
+	font-family: 'fira_sansbook';
+	font-weight: 400;
 	color: #3ba8c0;
 	background-image: url('../img/index/short-line.jpg');
 	background-repeat: no-repeat;
@@ -29,7 +31,7 @@
 	margin-left: 20px;
 }
 
-.my-work-wrapper-img{
+.my-work__wrapper-img{
 	position: relative;
 	width: 181px;
 	height: 121px;
@@ -45,7 +47,9 @@
 	width: 100%;
 	height: 100%;
 }
-
+.my-work:hover  .my-work__hover{
+	display: block;
+}
 .my-work__hover{
 	display: none;
 	position: absolute;
@@ -54,27 +58,38 @@
 	width: 100%;
 	height: 100%;
 	background-color: rgba(64, 145, 186, 0.75);
+	transition: display 5s;
+}
+@keyframes my-work__hover--anim{
+	0% { transform: rotate(0deg)  }
+	50% { transform: rotate(180deg)  }
+	100% { transform: rotate(360deg)  }
 }
 .my-work__hover-text{
-	position: absolute;
-	top: 55px;
-	left: 55px;
-	margin: 0;
-	padding: 3px;
-	font-size: 12px;
+	width: 120px;
+	margin: 0 auto;
+	margin-top: 55px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 13px;
+	font-family: 'fira_sansbook';
 	color: #ffffff;
 	text-align: center;
 	border: 2px solid #ffffff;
 	border-radius: 7px;
 
+	animation: my-work__hover--anim 1s;
 }
+
 .my-work__link{
 	display: block;
 	margin: 0;
 	margin-bottom: 10px;
 	padding: 0;
 	font-size: 13px;
-	font-family: 'fira_sanslight_italic';
+	font-family: 'fira_sansbook_italic';
 	color: #3ba8c0;
 	text-align: center;
 	text-decoration: none;
@@ -85,7 +100,8 @@
 	padding: 0;
 	font-size: 15px;
 	font-family: 'fira_sanslight';
-	line-height: 21px;
+	font-weight: 500;
+	line-height: 1.2;
 	color: #4a545d;
 	text-align: center;
 }
@@ -99,23 +115,21 @@
 	padding: 0;
 	overflow: hidden;
 	background-color: #edf8fc;
-	border-radius: 7px;
 	background-image: url('../img/my-work/add-project-img.png');
 	background-repeat: no-repeat;
 	background-position: center 35px;
-}
-.add-project a {
-	position: absolute;
-	display: block;
-	width: 181px;
-	height: 121px;
+	border: 1px dashed #4a545d;;
+	border-radius: 4px;
 	text-decoration: none;
+	cursor: pointer;
 }
+
 .add-project__text{
 	margin: 0;
 	margin-top: 80px;
 	padding: 0;
 	font-size: 13px;
+	font-family: 'fira_sanslight';
 	color: #3ba8c0;
 	text-align: center;
 }
@@ -147,7 +161,7 @@
 	border-radius: 10px;
 	overflow: hidden;
 }
-.wrapper-form-titel{
+.modal-add-project__wrapper-titel{
 	margin-bottom: 10px;
 	background-color: #48cbe8;
 	border-bottom: 10px solid #67dffa;
@@ -159,6 +173,8 @@
 	padding-left: 12px;
 	padding-top: 6px;
 	font-size: 25px;
+	font-family: 'fira_sansregular';
+	font-weight: 500;
 	color: #ffffff;
 
 }
@@ -170,12 +186,15 @@
 	margin-top: 12px;
 	color: #ffffff;
 	text-indent: -99999px;
+	background-color: #48cbe8;
 	background-image: url('../img/my-work/modal-close.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
+
 }
-.modal-add-project__input-title{
+
+.modal-add-project__input-title {
 	margin: 0;
 	margin-left: 20px;
 	margin-bottom: 2px;
@@ -184,7 +203,7 @@
 	color: #959aa8;
 	font-family: 'fira_sansbook';
 }
-.modal-add-project__input{
+.modal-add-project__input {
 	width: 306px;
 	margin: 0;
 	margin-left: 20px;
@@ -193,29 +212,41 @@
 	font-family: 'fira_sanslight';
 	font-size: 13px;
 	color: #48cbe8;
+	background-color: #fbfcfd;
 	border: 1px solid #48cbe8;
 	border-radius: 4px;
 	outline: none;
 }
-.modal-add-project__input--upload{
+.modal-add-project__input:focus {
+	background-color: #ffffff;
+}
+.modal-add-project__input--upload {
 	display: inline-block;
 	vertical-align: top;
 	width: 253px;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
-.modal-add-project__upload{
+.modal-add-project__upload-icon {
 	display: inline-block;
 	vertical-align: top;
 	width: 51px;
 	height: 41px;
-	background-color: #48cbe8;
+	background-color: #41b9d4;
 	background-image: url('../img/my-work/upload-icon.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-}	
+	cursor: pointer;
+}
+.modal-add-project__upload-icon:hover {
+	background-color: #51daf8;
+}
+
+#upload{
+	display: none;
+}
 .modal-add-project__input--discription{
 	height: 90px;
 	margin-bottom: 15px;
