@@ -1,0 +1,22 @@
+.tooltipster-sidetip .tooltipster-box {
+	background: #f97e76;
+	border: none;
+	border-radius: 2px;
+}
+
+.tooltipster-sidetip .tooltipster-content {
+	padding: 5px 15px;
+	font-size: 13px;
+	font-family: 'fira_sansbook';
+	color: white;
+	line-height: 1.2em;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-border {
+	border: none;
+	left: 0;
+	top: 0;
+}
+.tooltipster-sidetip .tooltipster-arrow-background {
+	border: none;
+}

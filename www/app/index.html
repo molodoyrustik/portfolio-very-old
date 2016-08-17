@@ -23,15 +23,25 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-	<!--FONTS-->
-	<link rel="stylesheet" href="fonts/fira-font.css">
-	<!-- CSS -->
-	<!-- bower:css -->
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
-	<!-- endbower -->
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/about-me-page.css">
-	<script src='js/modernizr-2.8.3.min.js'></script>
+
+	<!-- build:css css/vendor.css -->
+		<!-- CSS -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+		<link rel="stylesheet" href="bower/tooltipster/dist/css/tooltipster.bundle.css" />
+		<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css css/main.css -->
+		<!--FONTS-->
+		<link rel="stylesheet" href="fonts/fira-font.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/about-me-page.css">
+	<!-- endbuild -->
+
+
+	
+
+
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -218,16 +228,18 @@
 	</div>
 	<!-- /footer -->
 
-
-	<!-- JS -->
-	<!-- bower:js -->
-	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="bower/ev-emitter/ev-emitter.js"></script>
-	<script src="bower/imagesloaded/imagesloaded.js"></script>
-	<script src="bower/qtip2/jquery.qtip.js"></script>
-	<script src="bower/qtip2/basic/jquery.qtip.js"></script>
-	<!-- endbower -->
-	<script src="js/main.js"></script>
+	<!-- build:js scripts/vendor.js -->
+		<!-- JS -->
+		<!-- bower:js -->
+		<script src='js/modernizr-2.8.3.min.js'></script>
+		<script src="bower/jquery/dist/jquery.js"></script>
+		<script src="bower/tooltipster/dist/js/tooltipster.bundle.js"></script>
+		<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:js scripts/main.js -->
+		<script src="js/main.js"></script>
+		<script src="js/valid.js"></script>
+	<!-- endbuild -->
 
 </body>
 </html>

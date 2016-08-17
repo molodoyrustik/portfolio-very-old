@@ -23,16 +23,21 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+		<!-- build:css css/vendor.css -->
+		<!-- CSS -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+		<link rel="stylesheet" href="bower/tooltipster/dist/css/tooltipster.bundle.css" />
+		<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css css/main.css -->
 	<!--FONTS-->
 	<link rel="stylesheet" href="fonts/fira-font.css">
-	<!-- CSS -->
-	<!-- bower:css -->
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
-	<!-- endbower -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/about-me-page.css">
-	<link rel="stylesheet" href="css/contact.css">
-	<script src='js/modernizr-2.8.3.min.js'></script>
+	<link rel="stylesheet" href="css/my-work.css">
+	<!-- endbuild -->
+
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -84,11 +89,11 @@
 							<li class="navigation-list__item ">
 								<a href="index.html" class="navigation-list__link">Обо мне</a>
 							</li>
-							<li class="navigation-list__item">
-								<a href="my-work.html" class="navigation-list__link">Мои работы</a>
-							</li>
 							<li class="navigation-list__item navigation-list__item--current">
-								<a href="" class="navigation-list__link">Связаться со мной</a>
+								<a href="#" class="navigation-list__link">Мои работы</a>
+							</li>
+							<li class="navigation-list__item">
+								<a href="contact.html" class="navigation-list__link">Связаться со мной</a>
 							</li>
 						</ul>
 
@@ -116,47 +121,76 @@
 				</aside>
 
 				<section class="variable-content">
-				
-					<section class="main-contact-block">
+					
+					<section class="my-work-main-block">
 
-						<h2 class='main-contact-block__title'>У вас интересный проект? Напишите мне!</h2>
+						<h2 class="my-work-main-block__title">Мои работы</h2>
 
-						<form action="" class="contact-form">
+						<div class="my-work">
 							
+							<div class="my-work__wrapper-img">
+								<img src="img/my-work/my-work-first.jpg" alt="" class="my-work__img">
 
-							<div class="contact-from__wrapper-for-text-input">
-								<label for="contact-input-name" class="contact-form__label">Имя</label>
-								<input type="text" id="contact-input-name" class="contact-form__input" placeholder="Как к вам обращаться?">
-							</div>
-
-							<div class="contact-from__wrapper-for-text-input">
-								<label for="contact-input-email" class="contact-form__label">Email</label>
-								<input type="text" id="contact-input-email" class="contact-form__input" placeholder="Куда мне писать?">
-							</div>
-
-							<div class="contact-from__wrapper-for-text-input">
-								<label for="contact-input-sms" class="contact-form__label">Сообщение</label>
-								<textarea type="text" id="contact-input-sms" class="contact-form__input contact-form__input--description" placeholder=" Кратко суть работы"></textarea>
-							</div>
-
-							<div class="contact-from__wrapper-for-text-input contact-from__wrapper-for-text-input--captcha">
-								<label for="contact-input-code" class="contact-form__label">Введите код с картинки</label>
-
-								<div class="contact-form__wrapper-captcha-img">
-									<img src="img/contact/captcha.jpg" alt="" class="contact-form__captcha-img">
+								<div class="my-work__hover">
+									<p class="my-work__hover-text">sedona.ru</p>
 								</div>
-
-								<input type="text" id="contact-input-code " class="contact-form__input contact-input-code" placeholder="Введите код">
 							</div>
 
-							<button class="contact-form__btn-submit">Отправить</button>
-							<button class="contact-form__btn-reset">Очистить</button>
-							
+							<a href="" class="my-work__link">www.sedona.ru</a>
+							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
 
-						</form>
+						</div>
+
+						<div class="my-work">
+
+							<div class="my-work__wrapper-img">
+								<img src="img/my-work/my-work-second.jpg" alt="" class="my-work__img">
+
+								<div class="my-work__hover">
+									<p class="my-work__hover-text">sedona.ru</p>
+								</div>
+							</div>
+							<a href="" class="my-work__link">www.pink.ru</a>
+							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
+
+
+
+						</div>
+
+						<div class="my-work">
+
+							<div class="my-work__wrapper-img">
+								<img src="img/my-work/my-work-first.jpg" alt="" class="my-work__img">
+
+								<div class="my-work__hover">
+									<p class="my-work__hover-text">sedona.ru</p>
+								</div>
+							</div>
+							<a href="" class="my-work__link">www.sedona.ru</a>
+							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
+
+						</div>
+
+						<div class="my-work">
+
+							<div class="my-work__wrapper-img">
+								<img src="img/my-work/my-work-second.jpg" alt="" class="my-work__img">
+								
+								<div class="my-work__hover">
+									<p class="my-work__hover-text">sedona.ru</p>
+								</div>
+							</div>
+							<a href="" class="my-work__link">www.pink.ru</a>
+							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
+
+						</div>
+
+						<a href="" class="add-project">
+								<p class="add-project__text">Добавить проект</p>
+						</a>
+
 
 					</section>
-					
 
 				</section>
 				
@@ -164,6 +198,36 @@
 			<!-- /body -->
 		</div>
 
+	</div>
+
+	<div class="modal-add-project">
+
+		<form action="" class="modal-add-project__form">
+
+		<div class="modal-add-project__wrapper-titel clearfix">
+			<h2 class="modal-add-project__form-titel">Добавление проекта</h2>
+			<i class="modal-add-project__form-close">Закрыть</i>
+		</div>
+				
+			<p class="modal-add-project__input-title">Название проекта</p>
+			<input type="text" class="modal-add-project__input" placeholder='Введите название'>
+
+			<p class="modal-add-project__input-title">Картинка проекта</p>
+			<p type="text" class="modal-add-project__input modal-add-project__input--upload">Загрузите изображение</p>
+			<label for="upload">
+				<div class="modal-add-project__upload-icon"></div>
+				<input type="file" id='upload'>
+			</label>
+
+			<p class="modal-add-project__input-title">URL проекта</p>
+			<input type="text" class="modal-add-project__input" placeholder="Добавить ссылку">
+
+			<p class="modal-add-project__input-title">Описание</p>
+			<textarea  class="modal-add-project__input modal-add-project__input--discription" placeholder="Пара слов о вашем проекте"> </textarea>
+
+			<button type="submit" class="modal-add-project__btn-submit">Добавить</button>
+		</form>
+	
 	</div>
 
 	<!-- footer -->
@@ -185,15 +249,17 @@
 	<!-- /footer -->
 
 
-	<!-- JS -->
-	<!-- bower:js -->
-	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="bower/ev-emitter/ev-emitter.js"></script>
-	<script src="bower/imagesloaded/imagesloaded.js"></script>
-	<script src="bower/qtip2/jquery.qtip.js"></script>
-	<script src="bower/qtip2/basic/jquery.qtip.js"></script>
-	<!-- endbower -->
-	<script src="js/main.js"></script>
+	<!-- build:js scripts/vendor.js -->
+		<!-- JS -->
+		<!-- bower:js -->
+		<script src='js/modernizr-2.8.3.min.js'></script>
+		<script src="bower/jquery/dist/jquery.js"></script>
+		<script src="bower/tooltipster/dist/js/tooltipster.bundle.js"></script>
+		<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:js scripts/main.js -->
+		<script src="js/main.js"></script>
+	<!-- endbuild -->
 
 </body>
 </html>

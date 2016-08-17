@@ -1,5 +1,6 @@
-document.querySelector('.add-project').addEventListener('click', function(e){
-	e.preventDefault();
+var pro = document.querySelector('.add-project');
+    pro.addEventListener('click', function (e) {
+	  e.preventDefault();
 	document.querySelector('.modal-add-project').style.display = 'block';
 })
 document.querySelector('.modal-add-project__form-close').addEventListener('click', function(e){
@@ -7,12 +8,15 @@ document.querySelector('.modal-add-project__form-close').addEventListener('click
 	document.querySelector('.modal-add-project').style.display = 'none';
 })
 
-$.ajax({
-			type: 'POST',
-			url: 'ajax.php',
-			data: params,
-			dataType:"json"
-		})
+var params = {
+    'name' : 'ruslan'
+}
+var res = $.ajax({
+    type: 'POST',
+    url: 'ajax.php',
+    data: params,
+    dataType: "json"
+                 })
 		.done(function(){
 			console.log("success");
 		})
@@ -22,3 +26,5 @@ $.ajax({
 		.always(function(){
 			console.log("complete");
 		});
+
+		console.log(res);
