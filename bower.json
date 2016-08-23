@@ -17,7 +17,20 @@
   "dependencies": {
     "normalize-css": "^4.2.0",
     "jquery": "^3.1.0",
-    "tooltipster": "^4.1.2"
+    "tooltipster": "^4.1.2",
+    "modernizer": "^2.8.2",
+    "qtip2": "^2.2.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "overrides": {
+    "qtip2": {
+      "main": [
+        "./jquery.qtip.js",
+        "./jquery.qtip.css"
+      ],
+      "dependencies": {
+        "jquery": ">=1.6.0"
+      }
+    }
+  }
 }

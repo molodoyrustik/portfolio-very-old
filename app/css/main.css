@@ -243,6 +243,7 @@ body{
 
 }
 .contact-list__link{
+    width: 250px;
     display: block;
     padding: 0;
     padding-top: 10px;
@@ -253,6 +254,9 @@ body{
     font-family: 'fira_sansbook';
     color: #ffffff;
     text-decoration: none;
+    border: none;
+    outline: none;
+    text-align: left;
 }
 
 .contact-list__link--mail{

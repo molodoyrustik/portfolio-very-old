@@ -24,18 +24,31 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 
-		<!-- build:css css/vendor.css -->
+	<!-- build:css css/vendor.min.css -->
 		<!-- CSS -->
 		<!-- bower:css -->
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="bower/tooltipster/dist/css/tooltipster.bundle.css" />
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css" />
 		<!-- endbower -->
 	<!-- endbuild -->
-	<!-- build:css css/main.css -->
-	<!--FONTS-->
-	<link rel="stylesheet" href="fonts/fira-font.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/my-work.css">
+
+	<!-- build:css fonts/fonts.min.css -->
+		<!--FONTS-->
+		<link rel="stylesheet" href="fonts/fira-font.css">
+	<!-- endbuild -->
+
+	<!-- build:css css/main.min.css -->
+		<!-- STYLE -->
+		<link rel="stylesheet" href="css/about-me-page.css">
+		<link rel="stylesheet" href="css/contact.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/my-work.css">
+		<link rel="stylesheet" href="css/tooltip.css">
+	<!-- endbuild -->
+
+	<!-- build:js js/modernizr.min.js -->
+	<script src="bower/modernizer/modernizr.js"></script>
 	<!-- endbuild -->
 
 </head>
@@ -132,12 +145,12 @@
 								<img src="img/my-work/my-work-first.jpg" alt="" class="my-work__img">
 
 								<div class="my-work__hover">
-									<p class="my-work__hover-text">sedona.ru</p>
+									<p class="my-work__hover-text">pink</p>
 								</div>
 							</div>
 
-							<a href="" class="my-work__link">www.sedona.ru</a>
-							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
+							<a href="" class="my-work__link">https://github.com/molodoyrustik/pink</a>
+							<p class="my-work__description">Responsive + retina</p>
 
 						</div>
 
@@ -147,43 +160,16 @@
 								<img src="img/my-work/my-work-second.jpg" alt="" class="my-work__img">
 
 								<div class="my-work__hover">
-									<p class="my-work__hover-text">sedona.ru</p>
+									<p class="my-work__hover-text">sedona</p>
 								</div>
 							</div>
-							<a href="" class="my-work__link">www.pink.ru</a>
-							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
+							<a href="" class="my-work__link">https://github.com/molodoyrustik/sedona</a>
+							<p class="my-work__description">Adaptive + retina</p>
 
 
 
 						</div>
 
-						<div class="my-work">
-
-							<div class="my-work__wrapper-img">
-								<img src="img/my-work/my-work-first.jpg" alt="" class="my-work__img">
-
-								<div class="my-work__hover">
-									<p class="my-work__hover-text">sedona.ru</p>
-								</div>
-							</div>
-							<a href="" class="my-work__link">www.sedona.ru</a>
-							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
-
-						</div>
-
-						<div class="my-work">
-
-							<div class="my-work__wrapper-img">
-								<img src="img/my-work/my-work-second.jpg" alt="" class="my-work__img">
-								
-								<div class="my-work__hover">
-									<p class="my-work__hover-text">sedona.ru</p>
-								</div>
-							</div>
-							<a href="" class="my-work__link">www.pink.ru</a>
-							<p class="my-work__description">Информация о проекте 1 превью 2 строки</p>
-
-						</div>
 
 						<a href="" class="add-project">
 								<p class="add-project__text">Добавить проект</p>
@@ -249,16 +235,18 @@
 	<!-- /footer -->
 
 
-	<!-- build:js scripts/vendor.js -->
+	<!-- build:js js/vendor.js -->
 		<!-- JS -->
 		<!-- bower:js -->
-		<script src='js/modernizr-2.8.3.min.js'></script>
 		<script src="bower/jquery/dist/jquery.js"></script>
 		<script src="bower/tooltipster/dist/js/tooltipster.bundle.js"></script>
+		<script src="bower/qtip2/jquery.qtip.js"></script>
 		<!-- endbower -->
 	<!-- endbuild -->
-	<!-- build:js scripts/main.js -->
+
+	<!-- build:js js/main.js -->
 		<script src="js/main.js"></script>
+		<script src="js/valid.js"></script>
 	<!-- endbuild -->
 
 </body>

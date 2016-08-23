@@ -25,21 +25,32 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 
 
-		<!-- build:css css/vendor.css -->
+	<!-- build:css css/vendor.min.css -->
 		<!-- CSS -->
 		<!-- bower:css -->
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="bower/tooltipster/dist/css/tooltipster.bundle.css" />
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css" />
 		<!-- endbower -->
 	<!-- endbuild -->
-	<!-- build:css css/main.css -->
-	<!--FONTS-->
-	<link rel="stylesheet" href="fonts/fira-font.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/contact.css">
-	<link rel="stylesheet" href="css/tooltip.css">
+
+	<!-- build:css fonts/fonts.min.css -->
+		<!--FONTS-->
+		<link rel="stylesheet" href="fonts/fira-font.css">
 	<!-- endbuild -->
 
+	<!-- build:css css/main.min.css -->
+		<!-- STYLE -->
+		<link rel="stylesheet" href="css/about-me-page.css">
+		<link rel="stylesheet" href="css/contact.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/my-work.css">
+		<link rel="stylesheet" href="css/tooltip.css">
+	<!-- endbuild -->
+
+	<!-- build:js js/modernizr.min.js -->
+	<script src="bower/modernizer/modernizr.js"></script>
+	<!-- endbuild -->
 
 </head>
 <body>
@@ -193,15 +204,16 @@
 	<!-- /footer -->
 
 
-	<!-- build:js scripts/vendor.js -->
+	<!-- build:js js/vendor.js -->
 		<!-- JS -->
 		<!-- bower:js -->
-		<script src='js/modernizr-2.8.3.min.js'></script>
 		<script src="bower/jquery/dist/jquery.js"></script>
 		<script src="bower/tooltipster/dist/js/tooltipster.bundle.js"></script>
+		<script src="bower/qtip2/jquery.qtip.js"></script>
 		<!-- endbower -->
 	<!-- endbuild -->
-	<!-- build:js scripts/main.js -->
+
+	<!-- build:js js/main.js -->
 		<script src="js/main.js"></script>
 		<script src="js/valid.js"></script>
 	<!-- endbuild -->

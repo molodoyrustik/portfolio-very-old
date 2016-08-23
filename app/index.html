@@ -24,24 +24,33 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 
-	<!-- build:css css/vendor.css -->
+	<!-- build:css css/vendor.min.css -->
 		<!-- CSS -->
 		<!-- bower:css -->
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="bower/tooltipster/dist/css/tooltipster.bundle.css" />
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css" />
 		<!-- endbower -->
 	<!-- endbuild -->
-	<!-- build:css css/main.css -->
+
+	<!-- build:css fonts/fonts.min.css -->
 		<!--FONTS-->
 		<link rel="stylesheet" href="fonts/fira-font.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/about-me-page.css">
 	<!-- endbuild -->
 
+	<!-- build:css css/main.min.css -->
+		<!-- STYLE -->
+		<link rel="stylesheet" href="css/about-me-page.css">
+		<link rel="stylesheet" href="css/contact.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/my-work.css">
+		<link rel="stylesheet" href="css/tooltip.css">
+	<!-- endbuild -->
 
+	<!-- build:js js/modernizr.min.js -->
+	<script src="bower/modernizer/modernizr.js"></script>
+	<!-- endbuild -->
 	
-
-
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -63,7 +72,7 @@
 
 					<ul class="socials">
 						<li class="socials__item">
-							<a href="https://vk.com/im" class="socials__link socials__link--vk">Вконтакте</a>
+							<a href="https://vk.com/id188735242" class="socials__link socials__link--vk">Вконтакте</a>
 						</li>
 						<li class="socials__item">
 							<a href="" class="socials__link socials__link--tw">Twitter</a>
@@ -72,7 +81,7 @@
 							<a href="" class="socials__link socials__link--fb">Facebook</a>
 						</li>
 						<li class="socials__item">
-							<a href="" class="socials__link socials__link--gh">Github</a>
+							<a href="https://github.com/molodoyrustik" class="socials__link socials__link--gh">Github</a>
 						</li>
 					</ul>
 
@@ -109,13 +118,13 @@
 
 						<ul class="contact-list">
 							<li class="contact-list__item">
-								<a href="" class="contact-list__link contact-list__link--mail">molodoy@gmail.com</a>
+								<p  class="contact-list__link contact-list__link--mail">rustikfront@gmail.com</p>
 							</li>
 							<li class="contact-list__item">
-								<a href="" class="contact-list__link contact-list__link--phone">+79279501417</a>
+								<p  class="contact-list__link contact-list__link--phone">+79279501417</p>
 							</li>
 							<li class="contact-list__item">
-								<a href="" class="contact-list__link contact-list__link--skype">ruslan1999999</a>
+								<p  class="contact-list__link contact-list__link--skype">ruslan</p>
 							</li>
 						</ul>
 
@@ -141,10 +150,6 @@
 									<span class="list-info__value">Багаутдинов Руслан Разинович</span>
 								</li>
 								<li class="list-info__item">
-									<span class="list-info__key">Мой возраст:</span>
-									<span class="list-info__value">17 лет</span>
-								</li>
-								<li class="list-info__item">
 									<span class="list-info__key">Мой город:</span>
 									<span class="list-info__value">Уфа</span>
 								</li>
@@ -158,8 +163,16 @@
 										<span>html5</span>
 										<span>css3</span>
 										<span>javascript</span>
+										<span>jQuery</span>
+										<span>jQuery Ui</span>
+										<span>lodash</span>
+										<span>underscore.js</span>
+										<span>php</span>
 										<span>gulp</span>
 										<span>git</span>
+										<span>responsive and adaptive design</span>
+										<span>BEM naming</span>
+										<span>mobile first</span>
 									</span>
 								</li>
 							</ul>
@@ -167,7 +180,7 @@
 
 					</section>
 
-					<section class="work-block">
+					<!-- <section class="work-block">
 
 						<h2 class="work-block__title">Опыт работы</h2>
 
@@ -182,7 +195,7 @@
 							</li>
 						</ul>
 
-					</section>
+					</section> -->
 
 
 					<section class="education-block">
@@ -190,13 +203,13 @@
 						<h2 class="education-block__title">Образование</h2>
 
 						<ul class="list-education">
-							<li class="list-education__item">
+							<!-- <li class="list-education__item">
 								<div class="list-education__where">Незаконченное высшее. СПБГУ ИТМО</div>
 								<div class="list-education__when">Сеньтябрь 2017 - по настоящее время</div>
-							</li>
+							</li> -->
 							<li class="list-education__item">
-								<div class="list-education__where">Курсы Loftschool.ru</div>
-								<div class="list-education__when">Сентябрь 2015 - Ноябрь 2015</div>
+								<div class="list-education__where">Курсы Loftschool.ru, HTMLAcademy, ITVDN по frontend</div>
+								<!-- <div class="list-education__when">Сентябрь 2015 - Ноябрь 2015</div> -->
 							</li>
 						</ul>
 
@@ -228,15 +241,16 @@
 	</div>
 	<!-- /footer -->
 
-	<!-- build:js scripts/vendor.js -->
+	<!-- build:js js/vendor.js -->
 		<!-- JS -->
 		<!-- bower:js -->
-		<script src='js/modernizr-2.8.3.min.js'></script>
 		<script src="bower/jquery/dist/jquery.js"></script>
 		<script src="bower/tooltipster/dist/js/tooltipster.bundle.js"></script>
+		<script src="bower/qtip2/jquery.qtip.js"></script>
 		<!-- endbower -->
 	<!-- endbuild -->
-	<!-- build:js scripts/main.js -->
+
+	<!-- build:js js/main.js -->
 		<script src="js/main.js"></script>
 		<script src="js/valid.js"></script>
 	<!-- endbuild -->
