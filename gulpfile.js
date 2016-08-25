@@ -144,7 +144,7 @@ var log = function (error) {
         error.message,
         '---------------------- ERROR MESSAGE END ----------------------',
         ''
-        ].joing('\n'));
+        ].join('\n'));
         this.end();
 }
 
